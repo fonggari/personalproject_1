@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      @font-face {
+        font-family: 'paybooc-Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: paybooc-Bold;
+      }
+      .grid_logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 1px  gray;
+      }
+      a {
+        text-decoration: none;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      h1 {
+        text-align:right;
+        font-size: 200px;
+        margin: 0;
+        margin-right: -45px;
+        margin-top: -50px;
+      }
+      .sub {
+        padding-top: 98px;
+        padding-left: 20px;
+        color: #404040;    /** 짙은 회색 HEX값 **/
+      }
+      .sub p {        /** sub에 속하는 p태그에 적용 **/
+        margin:0;
+      }
+/**             로고                  **/
+      #list {
+        border-right:1px solid gray;
+        width:100px;
+        margin:0;
+        padding:20px;
+        padding-top: 30px;
+      }
+      #list a {      /** list에 속하는 a태그에 적용 **/
+        color: black;
+      }
+      #contents {
+        padding-left: 30px;
+      }
+      #simple:hover {
+        color: pink;
+      }
+      #copy:hover {
+        color: green;
+      }
+      #plan:hover {
+        color: orange;
+      }
+/**             카테고리               **/
+    </style>
+  </head>
+  <body>
+    <a href="home.html"><div class="grid_logo">   <!-- 텍스트로 로고 시도 -->
+      <h1 style="color:navy">ㅍ</h1>
+      <div class="sub">
+        <p>ersonal</p>
+        <p>roject</p>
+      </div>
+    </div> </a>      <!-- 로고 전체에 링크 삽입 & 닫기-->
+    <div id="grid">
+      <ul id="list">
+        <a href="1_simple.html"> <li id="simple">단편 작업물</li></a>
+        <br>  <!-- 카테고리 간격 조절 -->
+        <a href="2_copy.html"> <li id="copy">모방 작업물</li></a>
+        <br>  <!-- 카테고리 간격 조절 -->
+        <a href="3_plan.html"> <li id="plan">기획 작업물</li></a>
+      </ul>
+      <div id="contents">
+        <h2>contents</h2>
+        <div class="absp">  <!-- 단편 작업물의 내용, 기본 전시 -->
+          학습한 내용들로 페이지를 제작하거나, 아이디어를 구체화한 단편적인 작업물
+        </div>          <!-- absp 닫기-->
+        <div class="abcp">  <!-- 모방 작업물의 내용, 마우스 오버 시 전시 -->
+          기존 사용되고 있는 페이지를 그대로 모방해 제작한 작업물
+        </div>          <!-- abcp 닫기-->
+        <div class="abpl">  <!-- 기획 작업물의 내용, 마우스 오버 시 전시 -->
+          직접적으로 기획을 해서 제작한 복합적, 종합적인 작업물
+        </div>          <!-- abpl 닫기-->
+      </div>            <!--contents 닫기-->
+    </div>              <!-- grid 닫기 -->
+  </body>
+</html>
